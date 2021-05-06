@@ -1,11 +1,13 @@
 #include "Time.hpp"  
 	
-Time::Time()
+Time::Time(string name)
 {
-	
+    this->nome = nome;
+    this->numTime = geraNumTime();
 }
-	
-Time::~Time()
+
+int Time::geraNumTime()
 {
-	
+    ultimoNumTime++;
+    return ultimoNumTime;
 }

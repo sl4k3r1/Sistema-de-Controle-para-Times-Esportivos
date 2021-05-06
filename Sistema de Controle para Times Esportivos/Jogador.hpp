@@ -10,18 +10,18 @@ class Jogador
 	private:
         string nome;
         int numJogador;
-        int dataDeNacimento;
+        int dataDeNacimento[3];
         string nacionalidade;
         string areaDeAtuacao;
         int static ultimoNumJogador;
         int geraNumJogador();
         float salario;
         float salarioL;
-        //int idade;
 
 	public:
 
-		Jogador(string nome, float s);
+		Jogador(string nome, float s,string areaAtuacao,int dia,int mes,int ano,string nacionalidade);
+		Jogador();
 		void JogadorImprime();
 		string getNome();
 		int getNumJogador();
@@ -31,8 +31,11 @@ class Jogador
 		string getAreaDeAtuacao();
 		float getSalario();
         float getSalarioL();
-        void setSalario(float s);
-        void setSalarioLiquido();
 
+        void setSalario(float s);
+        void setSalarioLiquido(float s);
+        void setAtuacao(string atuacao);
+        void setNascimento(int dia,int mes,int ano);
+        void setNacionalidade(string _nacionalidade);
 };
 #endif

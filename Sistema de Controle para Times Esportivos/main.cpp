@@ -7,19 +7,19 @@ using namespace std;
 
 int main()
 {
-    setlocale(LC_ALL,"");
+    setlocale(LC_ALL,"pt-br");
     bool executando = true;
     int respostaUsuario = 0;
     Jogador jogadores[100];
     do
     {
         cout<< "------------------"<<endl;
-        cout<< "(1) criar Jogador"<<endl;
-        cout<< "(2) criar Time"<<endl;
-        cout<< "(3) criar Empresa"<<endl;
-        cout<< "(4) sair do programa"<<endl;
+        cout<< "(1) Adicionar Jogador"<<endl;
+        cout<< "(2) Olhar Time"<<endl;
+        cout<< "(3) Olhar Empresa"<<endl;
+        cout<< "(4) Sair do programa"<<endl;
         cout<< "------------------"<<endl;
-        cout<< "Escolha uma opção válida: ";
+        cout<< "Escolha uma opção valida: ";
         cin >> respostaUsuario;
 
         string nome = " ";
@@ -38,18 +38,18 @@ int main()
                 cout<<"Nome do jogador: ";
                 cin>>nome;
 
-                cout<<"Salário bruto: ";
+                cout<<"Salario bruto: ";
                 cin >> salario;
                 
                 cout<<"Data de nascimento: ";
                 cout<<"Dia: ";
                 cin>>nascimento[0];
-                cout<<"Mês: ";
+                cout<<"Mes: ";
                 cin>>nascimento[1];
                 cout<<"Ano: ";
                 cin>>nascimento[2];
 
-                cout<<"Área de atuação: ";
+                cout<<"Area de atuação: ";
                 cin >> areaAtuacao;
 
                 cout<<"Nacionalidade: ";

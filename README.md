@@ -6,4 +6,4 @@ C++
 POO
 
 
-O Rubem não eatá na faculdade ele é um amigo da escola que me ajudou!!
+
